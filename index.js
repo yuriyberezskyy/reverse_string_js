@@ -13,4 +13,10 @@ const reverseString = (str) => {
   return finalString
 }
 
-console.log(reverseString("I"))
+function reverse2(str){
+  return str.split('').reverse().join('')
+}
+
+const reverse3 = (str) => [...str].reverse().join('')
+
+console.log(reverse3("hello hello"))
